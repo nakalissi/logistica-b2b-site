@@ -1,0 +1,23 @@
+# Logs e artefatos de build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.eslintcache
