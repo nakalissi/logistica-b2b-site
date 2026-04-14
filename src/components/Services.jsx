@@ -2,40 +2,40 @@ import styles from './Services.module.css'
 
 const SERVICES = [
   {
-    icon: '🚚',
-    title: 'Gestão de Transporte',
-    desc: 'Planejamento e execução de rotas otimizadas para entrega de cargas fracionadas e lotação em todo o Brasil, com rastreamento em tempo real.',
-    features: ['Roteirização inteligente', 'Múltiplas transportadoras', 'Rastreio em tempo real'],
+    icon: '🌐',
+    title: 'Acesse o Site',
+    desc: 'Entre na nossa plataforma de qualquer dispositivo — computador, tablet ou celular. Sem necessidade de cadastro para cotar.',
+    features: ['Acesso rápido', 'Sem cadastro obrigatório', 'Responsivo e mobile-friendly'],
   },
   {
-    icon: '🏭',
-    title: 'Armazenagem & WMS',
-    desc: 'Centros de distribuição estrategicamente localizados com controle total de estoque via sistema WMS integrado à sua operação.',
-    features: ['Controle de inventário', 'Separação e embalagem', 'Cross-docking'],
+    icon: '📐',
+    title: 'Informe Medidas, Peso e Volume',
+    desc: 'Preencha os dados da sua carga: peso, altura, largura e comprimento. Nossa calculadora faz o resto automaticamente.',
+    features: ['Campos simples e intuitivos', 'Cálculo automático de cubagem', 'Múltiplos volumes'],
+  },
+  {
+    icon: '✅',
+    title: 'Receba sua Cotação na Hora',
+    desc: 'Em segundos, receba cotações de diversas transportadoras. Compare preços, prazos e escolha a melhor opção para sua empresa.',
+    features: ['Cotação instantânea', 'Comparativo de transportadoras', 'Melhor custo-benefício'],
+  },
+  {
+    icon: '🚚',
+    title: 'Gestão de Transporte',
+    desc: 'Planejamento e execução de rotas otimizadas para entrega de cargas fracionadas e lotação em todo o Brasil.',
+    features: ['Roteirização inteligente', 'Múltiplas transportadoras', 'Rastreio em tempo real'],
   },
   {
     icon: '📊',
     title: 'Analytics & Visibilidade',
-    desc: 'Dashboard completo com KPIs logísticos, relatórios personalizados e alertas proativos para tomada de decisão baseada em dados.',
+    desc: 'Dashboard completo com KPIs logísticos e relatórios personalizados para tomada de decisão baseada em dados.',
     features: ['Dashboard em tempo real', 'Relatórios customizados', 'Alertas inteligentes'],
   },
   {
     icon: '🔗',
     title: 'Integração via API',
-    desc: 'Conecte sua plataforma ao nosso ecossistema logístico via API RESTful. Integração nativa com principais ERPs do mercado.',
+    desc: 'Conecte sua plataforma ao nosso ecossistema logístico via API RESTful. Integração com principais ERPs do mercado.',
     features: ['API RESTful', 'Webhooks', 'Suporte SAP, TOTVS, Oracle'],
-  },
-  {
-    icon: '🌍',
-    title: 'Comércio Exterior',
-    desc: 'Serviços de importação e exportação com assessoria aduaneira completa, despacho e gerenciamento de carga internacional.',
-    features: ['Assessoria aduaneira', 'Despacho marítimo e aéreo', 'Consolidação de cargas'],
-  },
-  {
-    icon: '♻️',
-    title: 'Logística Reversa',
-    desc: 'Gestão eficiente do fluxo reverso de produtos, desde a coleta até o processamento, garantindo sustentabilidade e conformidade.',
-    features: ['Coleta programada', 'Triagem e destinação', 'Laudos de conformidade'],
   },
 ]
 
@@ -44,13 +44,13 @@ export default function Services() {
     <section id="servicos" className={`section ${styles.services}`} aria-labelledby="services-title">
       <div className="container">
         <header className={`text-center ${styles.header}`}>
-          <div className="section-badge">O que Fazemos</div>
+          <div className="section-badge">Como Funciona</div>
           <h2 id="services-title" className="section-title">
-            Soluções completas para toda a cadeia logística
+            Simples, rápido e sem complicação
           </h2>
           <p className="section-subtitle">
-            Do planejamento à entrega final, oferecemos um portfólio integrado de
-            serviços logísticos para impulsionar o crescimento do seu negócio.
+            Em apenas 3 passos você recebe a cotação do frete para sua empresa.
+            Além disso, oferecemos ferramentas completas para sua logística.
           </p>
         </header>
 
@@ -74,9 +74,9 @@ export default function Services() {
 
         <div className={styles.cta}>
           <div className={styles.ctaContent}>
-            <h3 className={styles.ctaTitle}>Precisa de uma solução personalizada?</h3>
+            <h3 className={styles.ctaTitle}>Facilite sua logística hoje mesmo!</h3>
             <p className={styles.ctaDesc}>
-              Nossa equipe de especialistas está pronta para entender os desafios únicos do seu negócio.
+              Acesse agora e faça sua primeira cotação de frete gratuitamente.
             </p>
           </div>
           <a
@@ -88,7 +88,7 @@ export default function Services() {
               if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' })
             }}
           >
-            Falar com Especialista
+            Calcular Frete Agora
           </a>
         </div>
       </div>

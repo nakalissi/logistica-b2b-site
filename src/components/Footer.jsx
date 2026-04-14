@@ -4,13 +4,13 @@ const YEAR = new Date().getFullYear()
 
 const FOOTER_LINKS = {
   Empresa: [
-    { label: 'Sobre Nós', href: '#sobre' },
-    { label: 'Serviços', href: '#servicos' },
+    { label: 'Para Quem É', href: '#sobre' },
+    { label: 'Como Funciona', href: '#servicos' },
     { label: 'Contato', href: '#contato' },
   ],
   Serviços: [
+    { label: 'Cotação de Frete', href: '#servicos' },
     { label: 'Gestão de Transporte', href: '#servicos' },
-    { label: 'Armazenagem & WMS', href: '#servicos' },
     { label: 'Analytics & Visibilidade', href: '#servicos' },
     { label: 'Integração via API', href: '#servicos' },
   ],
@@ -34,18 +34,19 @@ export default function Footer() {
         <div className={styles.top}>
           {/* Brand */}
           <div className={styles.brand}>
-            <a href="#inicio" className={styles.logo} onClick={(e) => handleClick(e, '#inicio')} aria-label="Log-ística B2B - Topo da página">
+            <a href="#inicio" className={styles.logo} onClick={(e) => handleClick(e, '#inicio')} aria-label="Logística B2B - Topo da página">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <rect width="32" height="32" rx="8" fill="#f4801a"/>
                 <path d="M6 22L10 10L16 18L20 14L26 22H6Z" fill="white" opacity="0.9"/>
                 <circle cx="24" cy="12" r="3" fill="white"/>
               </svg>
               <span className={styles.logoText}>
-                Log<span className={styles.logoAccent}>-ística</span> B2B
+                <span className={styles.logoAccent}>LOGÍSTICA</span> B2B
               </span>
             </a>
             <p className={styles.tagline}>
-              Conectando empresas a soluções logísticas inteligentes e eficientes em todo o Brasil.
+              Cotação de frete rápida, fácil e online para empresas.
+              Simplifique sua logística B2B.
             </p>
             <div className={styles.social} aria-label="Redes sociais">
               <a href="#" aria-label="LinkedIn" className={styles.socialLink}>
@@ -80,14 +81,10 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.copy}>
-            © {YEAR} Log-ística B2B. Todos os direitos reservados.
+            © {YEAR} Logística B2B. Todos os direitos reservados.
           </p>
           <p className={styles.madewith}>
-            Desenvolvido com ❤️ e{' '}
-            <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer" className={styles.techLink}>Vite</a>
-            {' '}+{' '}
-            <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className={styles.techLink}>React 19</a>
-          </p>
+            Desenvolvido por nkweb.com.br</p>
         </div>
       </div>
     </footer>

@@ -2,19 +2,19 @@ import styles from './About.module.css'
 
 const VALUES = [
   {
-    icon: '🎯',
-    title: 'Missão',
-    desc: 'Simplificar e otimizar a cadeia logística das empresas, entregando soluções que reduzem custos e aumentam a eficiência operacional.',
+    icon: '⚡',
+    title: 'Cotação Imediata',
+    desc: 'Receba a cotação do seu frete na hora, sem espera. Basta informar os dados da carga e pronto.',
   },
   {
-    icon: '👁️',
-    title: 'Visão',
-    desc: 'Ser a referência em soluções logísticas B2B no Brasil, reconhecida pela inovação tecnológica e pela excelência no atendimento.',
+    icon: '📱',
+    title: 'Plataforma Simples e Intuitiva',
+    desc: 'Interface fácil de usar, acessível de qualquer dispositivo. Sem complicação, sem burocracia.',
   },
   {
-    icon: '💎',
-    title: 'Valores',
-    desc: 'Comprometimento, transparência e inovação em cada operação — porque acreditamos que confiança é a base de toda parceria de sucesso.',
+    icon: '💰',
+    title: 'Economia de Tempo e Dinheiro',
+    desc: 'Compare preços de diversas transportadoras em segundos e escolha a melhor opção para o seu negócio.',
   },
 ]
 
@@ -28,18 +28,18 @@ export default function About() {
             <div className={styles.imageWrapper}>
               <div className={styles.imagePlaceholder}>
                 <div className={styles.imageBadge}>
-                  <span className={styles.imageBadgeNumber}>15+</span>
-                  <span className={styles.imageBadgeText}>anos de mercado</span>
+                  <span className={styles.imageBadgeNumber}>B2B</span>
+                  <span className={styles.imageBadgeText}>simplificada</span>
                 </div>
                 <div className={styles.imageDecor}>
                   <div className={styles.truck}>
-                    <span>🚛</span>
+                    <span>🏪</span>
                   </div>
                   <div className={styles.warehouse}>
                     <span>🏭</span>
                   </div>
                   <div className={styles.globe}>
-                    <span>🌎</span>
+                    <span>📦</span>
                   </div>
                 </div>
                 <svg viewBox="0 0 400 320" className={styles.svg} aria-hidden="true">
@@ -59,38 +59,37 @@ export default function About() {
 
           {/* Right column — text */}
           <div className={styles.text}>
-            <div className="section-badge">Quem Somos</div>
+            <div className="section-badge">Para Quem É</div>
             <h2 id="about-title" className="section-title">
-              Mais de 15 anos movendo o Brasil
+              Ideal para operações B2B
             </h2>
             <p className={styles.lead}>
-              Somos uma empresa especializada em soluções logísticas B2B, combinando
-              tecnologia de ponta com expertise operacional para transformar a cadeia de
-              suprimentos dos nossos clientes.
+              Nossa plataforma foi desenvolvida para empresas que precisam de
+              agilidade e economia no cálculo de frete. Atendemos diversos segmentos
+              do mercado B2B.
             </p>
             <p className={styles.body}>
-              Desde a coleta até a entrega final, atuamos em todas as etapas do processo
-              logístico com foco em eficiência, rastreabilidade e redução de custos.
-              Nossa plataforma digital integra transportadoras, armazéns e clientes em
-              tempo real.
+              Se você precisa calcular frete para sua empresa, agora ficou simples.
+              Acesse o site, informe as medidas, peso e volume, e receba sua
+              cotação na hora.
             </p>
 
             <ul className={styles.highlights}>
               <li>
                 <span className={styles.highlightIcon} aria-hidden="true">✓</span>
-                Cobertura em todo o território nacional
+                Lojas Online e E-commerces
               </li>
               <li>
                 <span className={styles.highlightIcon} aria-hidden="true">✓</span>
-                Integração via API com ERPs e WMS
+                Atacadistas e Distribuidores
               </li>
               <li>
                 <span className={styles.highlightIcon} aria-hidden="true">✓</span>
-                Equipe dedicada para cada conta
+                Indústrias e Manufaturas
               </li>
               <li>
                 <span className={styles.highlightIcon} aria-hidden="true">✓</span>
-                Relatórios e dashboards em tempo real
+                Qualquer empresa que envia mercadorias
               </li>
             </ul>
           </div>

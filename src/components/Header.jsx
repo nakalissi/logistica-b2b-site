@@ -32,7 +32,7 @@ export default function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`} role="banner">
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
-        <a href="#inicio" className={styles.logo} onClick={(e) => handleNavClick(e, '#inicio')} aria-label="Log-ística B2B - Início">
+        <a href="#inicio" className={styles.logo} onClick={(e) => handleNavClick(e, '#inicio')} aria-label="Logística B2B - Início">
           <span className={styles.logoIcon} aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="32" rx="8" fill="#f4801a"/>
@@ -41,7 +41,7 @@ export default function Header() {
             </svg>
           </span>
           <span className={styles.logoText}>
-            Log<span className={styles.logoAccent}>-ística</span> B2B
+            <span className={styles.logoAccent}>LOGÍSTICA</span> B2B
           </span>
         </a>
 

@@ -1,10 +1,10 @@
 import styles from './Hero.module.css'
 
 const STATS = [
-  { value: '500+', label: 'Clientes Ativos' },
-  { value: '98%', label: 'Entregas no Prazo' },
-  { value: '15+', label: 'Anos de Experiência' },
-  { value: '24/7', label: 'Suporte Dedicado' },
+  { value: 'Online', label: 'Cotação Imediata' },
+  { value: '100%', label: 'Plataforma Digital' },
+  { value: 'B2B', label: 'Foco Empresarial' },
+  { value: '24/7', label: 'Disponível Sempre' },
 ]
 
 export default function Hero() {
@@ -37,21 +37,21 @@ export default function Hero() {
 
       <div className={`container ${styles.content}`}>
         <div className={styles.textBlock}>
-          <div className="section-badge">Logística B2B de Alta Performance</div>
+          <div className="section-badge">Logística B2B Simplificada</div>
 
           <h1 className={styles.title}>
-            Conectamos sua empresa ao{' '}
-            <span className={styles.titleAccent}>sucesso logístico</span>
+            Cotação de frete{' '}
+            <span className={styles.titleAccent}>rápida, fácil e online</span>
           </h1>
 
           <p className={styles.description}>
-            Soluções inteligentes de transporte, armazenagem e distribuição para
-            empresas que buscam eficiência, agilidade e redução de custos na cadeia de suprimentos.
+            Precisa calcular frete para sua empresa? Agora ficou simples!
+            Informe as medidas, peso e volume e receba sua cotação na hora.
           </p>
 
           <div className={styles.actions}>
             <a href="#contato" className="btn btn-primary" onClick={scrollToContact}>
-              <span>Solicitar Proposta</span>
+              <span>Calcular Frete</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -65,26 +65,24 @@ export default function Hero() {
         {/* Hero visual */}
         <div className={styles.visual} aria-hidden="true">
           <div className={styles.visualCard}>
-            <div className={styles.visualIcon}>🚚</div>
+            <div className={styles.visualIcon}>�</div>
             <div className={styles.visualContent}>
-              <span className={styles.visualLabel}>Rastreamento em Tempo Real</span>
-              <div className={styles.visualBar}>
-                <div className={styles.visualBarFill} />
-              </div>
-              <span className={styles.visualMeta}>Carga #LB-2024-001 · Em trânsito</span>
+              <span className={styles.visualLabel}>Peso</span>
+              <span className={styles.visualValue}>25 kg</span>
+              <span className={styles.visualMeta}>Medidas: 60×40×30 cm</span>
             </div>
           </div>
           <div className={`${styles.visualCard} ${styles.visualCardAlt}`}>
-            <div className={styles.visualIcon}>📦</div>
+            <div className={styles.visualIcon}>🚚</div>
             <div className={styles.visualContent}>
-              <span className={styles.visualLabel}>Entregas concluídas hoje</span>
-              <span className={styles.visualValue}>1.247</span>
-              <span className={styles.visualMeta}>↑ 12% em relação a ontem</span>
+              <span className={styles.visualLabel}>Melhor cotação encontrada</span>
+              <span className={styles.visualValue}>R$ 47,90</span>
+              <span className={styles.visualMeta}>Entrega em 3 dias úteis</span>
             </div>
           </div>
           <div className={`${styles.visualCard} ${styles.visualCardSmall}`}>
-            <span className={styles.visualIcon}>⚡</span>
-            <span className={styles.visualSmallText}>Eficiência operacional: 98,3%</span>
+            <span className={styles.visualIcon}>✅</span>
+            <span className={styles.visualSmallText}>Cotação instantânea • Sem cadastro</span>
           </div>
         </div>
       </div>
