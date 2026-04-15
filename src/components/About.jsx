@@ -23,7 +23,6 @@ export default function About() {
     <section id="sobre" className={`section ${styles.about}`} aria-labelledby="about-title">
       <div className="container">
         <div className={styles.grid}>
-          {/* Left column — image/visual */}
           <div className={styles.visual} aria-hidden="true">
             <div className={styles.imageWrapper}>
               <div className={styles.imagePlaceholder}>
