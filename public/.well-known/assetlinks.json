@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fintech.syngenta.qa",
+      "sha256_cert_fingerprints": [
+        "EC:2E:52:1A:CF:FD:6B:18:5A:E3:8F:C1:23:93:7A:E4:74:5D:2A:50:3B:97:28:73:3B:0F:9E:01:C3:7C:10:D0",
+        "69:1D:F7:62:62:1C:B9:DB:8B:B5:2E:35:6F:37:04:C7:A0:03:92:D0:CC:B4:80:B1:BA:A2:65:17:90:64:9B:BD"
+      ]
+    }
+  }
+]
